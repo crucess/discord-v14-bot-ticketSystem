@@ -47,7 +47,7 @@ module.exports = {
                     }
                     const transcriptTimestamp = Math.round(Date.now() / 1000)
                     const transcriptEmbed = new EmbedBuilder()
-                    .setDescription(`${config.ticketTranscriptMember} <@${data.OwnerID}>\n${config.ticketTranscriptTicket} ${data.TicketID}\n${config.ticketTranscriptClaimed} ${claimed}\n${config.ticketTranscriptModerator} ${data.ClaimedBy}\n${config.ticketTranscriptTime} <t:${transcriptTimestamp}:R> (<t:${transcriptTimestamp}:F>)`)
+                    .setDescription(`${config.ticketTranscriptMember} <@${data.OwnerID}>\n${config.ticketTranscriptTicket} ${data.TicketID}\n${config.ticketTranscriptClaimed} ${claimed}\n${config.ticketTranscriptModerator} ${data.ClaimedBy}\n${config.ticketTranscriptTime} <t:${transcriptTimestamp}:R> (<t:${transcriptTimestamp}:F>)`).setColor("Green")
                     const closingTicket = new EmbedBuilder().setTitle(config.ticketCloseTitle).setDescription(config.ticketCloseDescription).setColor('Red')
                     await guild.channels.cache.get(docs.Transcripts).send({
                         embeds: [transcriptEmbed],

@@ -27,7 +27,7 @@ module.exports = {
             }else {
             data.MembersID.remove(interaction.values[0]);
             channel.permissionOverwrites.delete(interaction.values[0]).catch(error => {return});
-            interaction.channel.send({embeds: [embed.setColor('Green').setDescription('<@' + interaction.values[0] + '>' + ' ' + config.ticketMemberRemove)]}).catch(error => {return});
+            interaction.channel.send({embeds: [embed.setColor('Red').setDescription('<@' + interaction.values[0] + '>' + ' ' + config.ticketMemberRemove)]}).catch(error => {return});
             data.save();
             }
     })
