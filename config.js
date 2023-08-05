@@ -1,9 +1,6 @@
 module.exports = {
     // Basic configuration
-    token: 'MTA5MDI5OTQ0NDMzMjg2NzcyNg.GPDwW6.c66IlzeZQmfcOG8PseOrQQ5N9nz-vc0L8qzUQQ', // Place here your token
-    status: 'v1.0',
-    developerGuildID: '802967840193773639', // Place here your Guild ID
-    database: 'mongodb+srv://ignaciocrucescabello:3GCgcKFvD6Rkmcn2@ticketbotv1.h8fhijd.mongodb.net/', // Place here your MongoDB access
+   
 
     // Ticket configuration 
     ticketName: 'ticket-',
